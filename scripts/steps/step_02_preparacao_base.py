@@ -43,7 +43,7 @@ def main() -> int:
         },
     }
     dump_json(output_file(output_dir, 'base_preparada.json'), payload)
-    print('✓ base_preparada.json gerado')
+    print('OK base_preparada.json gerado')
     return 0
 
 

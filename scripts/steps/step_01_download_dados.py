@@ -37,7 +37,7 @@ def main() -> int:
         },
     }
     dump_json(output_file(output_dir, 'dados_brutos.json'), payload)
-    print('✓ dados_brutos.json gerado')
+    print('OK dados_brutos.json gerado')
     return 0
 
 
