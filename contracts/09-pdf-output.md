@@ -1,0 +1,1 @@
+Entrada: previsoes.json + visualizacoes.json + relatorio_narrativa.json (opcional). Objetivo: renderizar HTML via Jinja2, gerar PDF consolidado e salvar relatorio_final.json com caminhos dos artefatos finais.

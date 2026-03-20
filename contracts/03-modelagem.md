@@ -1,0 +1,1 @@
+Entrada: base_preparada.json. Objetivo: executar validação out-of-sample retendo 12 meses, ajustar os 5 modelos SARIMAX, aplicar máscara para NaN em exógenas laggadas, e salvar métricas/diagnósticos em modelagem.json.

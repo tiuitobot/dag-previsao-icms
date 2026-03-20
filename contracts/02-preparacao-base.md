@@ -1,0 +1,1 @@
+Entrada: dados_brutos.json. Objetivo: projetar exógenas conforme pipeline antigo (sazonalidade histórica + proxies Focus hardcoded), criar dummies e lags, e escrever base_preparada.json com base completa e definições dos 5 modelos.

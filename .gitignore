@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+workspace/outputs/active/*
+!workspace/outputs/active/.gitkeep
+workspace/outputs/archive/
+*.png
+*.pdf
+*.csv
+*.html
+*.log

@@ -1,0 +1,1 @@
+Entrada: nenhuma. Objetivo: ler os arquivos Excel em data/raw, tentar consultar BCB (IBC-BR 24363 e SGS 190 como fallback de inflação) e escrever workspace/outputs/active/dados_brutos.json com histórico tabular, status das fontes e metadados de corte histórico. Não alterar a matemática do pipeline fonte.

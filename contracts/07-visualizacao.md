@@ -1,0 +1,1 @@
+Entrada: base_preparada.json + previsoes.json. Objetivo: gerar gráficos PNG para série histórica, comparação de modelos, totais anuais, variáveis exógenas e IC anual, além de visualizacoes.json com inventário dos arquivos.

@@ -1,0 +1,1 @@
+Entrada: base_preparada.json + modelagem.json. Objetivo: retreinar os modelos com todo o histórico até ago/2025, simular Monte Carlo path-a-path, consolidar ensemble, gerar projeções mensais e totais anuais com IC 95%, e escrever previsoes.json.

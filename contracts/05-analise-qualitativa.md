@@ -1,0 +1,1 @@
+Executor copilot_cli. Ler previsoes.json e produzir analise_qualitativa.json com leitura econômica dos resultados, riscos, drivers macro e ressalvas metodológicas. Não inventar dados fora dos artefatos ou de pesquisa explicitamente realizada.

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Relatório de Previsão ICMS-SP</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #222; }
+    h1, h2 { color: #1f4e79; }
+    table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: right; }
+    th:first-child, td:first-child { text-align: left; }
+    .note { background: #eef6ff; padding: 12px; margin: 12px 0; }
+  </style>
+</head>
+<body>
+  <h1>Relatório de Previsão ICMS-SP</h1>
+  <div class="note">
+    <strong>Narrativa:</strong>
+    <p>{{ narrativa.summary if narrativa.summary else narrativa.instructions }}</p>
+  </div>
+  <h2>Totais anuais</h2>
+  <table>
+    <thead><tr><th>Ano</th><th>Média (R$ bi)</th><th>IC95% inferior</th><th>IC95% superior</th></tr></thead>
+    <tbody>
+      {% for ano, dados in annual_totals|dictsort %}
+      <tr>
+        <td>{{ ano }}</td>
+        <td>{{ '%.2f' % (dados.mean / 1e9) }}</td>
+        <td>{{ '%.2f' % (dados.low95 / 1e9) }}</td>
+        <td>{{ '%.2f' % (dados.high95 / 1e9) }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <h2>Previsões mensais</h2>
+  <table>
+    <thead><tr><th>Mês</th><th>Média (R$ bi)</th><th>IC95% inferior</th><th>IC95% superior</th></tr></thead>
+    <tbody>
+      {% for row in monthly_rows %}
+      <tr>
+        <td>{{ row.data }}</td>
+        <td>{{ '%.2f' % (row.icms_previsto_medio / 1e9) }}</td>
+        <td>{{ '%.2f' % (row.icms_lower_95 / 1e9) }}</td>
+        <td>{{ '%.2f' % (row.icms_upper_95 / 1e9) }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <h2>Gráficos</h2>
+  <ul>
+    {% for chart in charts %}<li>{{ chart }}</li>{% endfor %}
+  </ul>
+</body>
+</html>
