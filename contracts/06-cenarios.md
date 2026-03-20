@@ -1,1 +1,1 @@
-Executor copilot_cli. Ler previsoes.json e analise_qualitativa.json. Construir cenários base/otimista/pessimista com hipóteses explícitas para atividade, inflação e arrecadação, retornando cenarios.json.
+Executor copilot_cli. Ler previsoes.json e analise_qualitativa.md. Construir cenários base/otimista/pessimista com hipóteses explícitas para atividade, inflação e arrecadação, retornando cenarios.json.
