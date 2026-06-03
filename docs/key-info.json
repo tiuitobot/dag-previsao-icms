@@ -1,7 +1,7 @@
 {
   "repo": "previsao-icms-sp",
   "version": "1.0.0",
-  "lastUpdated": "2026-06-03T00:00:00Z",
+  "lastUpdated": "2026-06-03T12:00:00Z",
   "_cursor": "a82019271bc5bf26f0609bf1b318f9bcf988aec6",
   "keyInfo": [
     {
@@ -21,7 +21,7 @@
       "status": "active",
       "date": "2026-03-20",
       "source": "git commit 4a02db7",
-      "_sweepHits": 3
+      "_sweepHits": 2
     }
   ]
 }
