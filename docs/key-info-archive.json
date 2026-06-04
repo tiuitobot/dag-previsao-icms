@@ -65,5 +65,15 @@
     "context": "Gap G2 (projeção sem sazonalidade) identificado como high-priority. Implementar projeção com Focus mensal.",
     "_sweepHits": 0,
     "archivedAt": "2026-04-23T00:00:00-03:00"
+  },
+  {
+    "id": "K008",
+    "info": "Scaffold DAG pipeline for ICMS forecasting",
+    "importance": "high",
+    "status": "obsolete",
+    "date": "2026-03-20",
+    "source": "git commit 4a02db7",
+    "_sweepHits": 0,
+    "archivedAt": "2026-06-04T06:00:00Z"
   }
 ]

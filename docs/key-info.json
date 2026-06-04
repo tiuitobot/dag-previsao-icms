@@ -1,8 +1,8 @@
 {
   "repo": "previsao-icms-sp",
   "version": "1.0.0",
-  "lastUpdated": "2026-06-04T03:32:02Z",
-  "_cursor": "a82019271bc5bf26f0609bf1b318f9bcf988aec6",
+  "lastUpdated": "2026-06-04T06:00:00Z",
+  "_cursor": "86fa5884097ec0c3977de166144d59b168f41647",
   "keyInfo": [
     {
       "id": "K001",
@@ -13,15 +13,6 @@
       "source": "S-000287 — Models 2-5 falharam sem máscara",
       "context": "Replicação R→Python dos 5 modelos SARIMAX",
       "_sweepHits": 3
-    },
-    {
-      "id": "K002",
-      "info": "Scaffold DAG pipeline for ICMS forecasting",
-      "importance": "high",
-      "status": "active",
-      "date": "2026-03-20",
-      "source": "git commit 4a02db7",
-      "_sweepHits": 2
     }
   ]
 }
