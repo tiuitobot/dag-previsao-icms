@@ -23,7 +23,7 @@ def main() -> int:
     results = fit_validation_models(df_full)
     payload = {'step': '03-modelagem', 'status': 'ok', **results}
     dump_json(output_file(output_dir, 'modelagem.json'), payload)
-    print('✓ modelagem.json gerado')
+    print('OK modelagem.json gerado')
     return 0
 
 

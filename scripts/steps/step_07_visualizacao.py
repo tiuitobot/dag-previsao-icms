@@ -104,7 +104,7 @@ def main() -> int:
         'annual_totals': annual_totals,
     }
     dump_json(output_file(output_dir, 'visualizacoes.json'), payload)
-    print('✓ visualizacoes.json gerado')
+    print('OK visualizacoes.json gerado')
     return 0
 
 

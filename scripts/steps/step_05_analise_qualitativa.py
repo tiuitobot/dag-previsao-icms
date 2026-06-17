@@ -23,7 +23,7 @@ def main() -> int:
         'input_hint': {'annual_totals': previsoes.get('annual_totals', {})},
     }
     dump_json(output_file(output_dir, 'analise_qualitativa.json'), payload)
-    print('✓ analise_qualitativa.json gerado (stub)')
+    print('OK analise_qualitativa.json gerado (stub)')
     return 0
 
 

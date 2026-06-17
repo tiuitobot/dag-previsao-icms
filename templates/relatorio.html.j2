@@ -15,9 +15,38 @@
 <body>
   <h1>Relatório de Previsão ICMS-SP</h1>
   <div class="note">
-    <strong>Narrativa:</strong>
-    <p>{{ narrativa.summary if narrativa.summary else narrativa.instructions }}</p>
+    <strong>Resumo executivo:</strong>
+    <p>{{ narrativa.resumo_executivo if narrativa.resumo_executivo else narrativa.summary if narrativa.summary else narrativa.instructions }}</p>
   </div>
+  <h2>Mensagens-chave</h2>
+  <ul>
+    {% for item in narrativa.mensagens_chave %}<li>{{ item }}</li>{% endfor %}
+  </ul>
+  <h2>Limitações</h2>
+  <ul>
+    {% for item in narrativa.limitacoes %}<li>{{ item }}</li>{% endfor %}
+  </ul>
+  <h2>Recomendações</h2>
+  <ul>
+    {% for item in narrativa.recomendacoes %}<li>{{ item }}</li>{% endfor %}
+  </ul>
+  <h2>Análise Qualitativa</h2>
+  {% for block in analise_qualitativa.split('\n\n') %}
+  <p>{{ block }}</p>
+  {% endfor %}
+  <h2>Cenários</h2>
+  {% for nome, cenario in cenarios.items() %}
+  <div class="note">
+    <strong>{{ nome|capitalize }}</strong>
+    <ul>
+      <li><strong>Resumo:</strong> {{ cenario.resumo }}</li>
+      <li><strong>Atividade:</strong> {{ cenario.atividade }}</li>
+      <li><strong>Inflação:</strong> {{ cenario.inflacao }}</li>
+      <li><strong>Arrecadação:</strong> {{ cenario.arrecadacao }}</li>
+      <li><strong>Implicação para ICMS:</strong> {{ cenario.implicacao_icms }}</li>
+    </ul>
+  </div>
+  {% endfor %}
   <h2>Totais anuais</h2>
   <table>
     <thead><tr><th>Ano</th><th>Média (R$ bi)</th><th>IC95% inferior</th><th>IC95% superior</th></tr></thead>

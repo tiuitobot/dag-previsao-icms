@@ -56,7 +56,7 @@ def main() -> int:
         'annual_totals': forecasts['annual_totals'],
     }
     dump_json(output_file(output_dir, 'previsoes.json'), payload)
-    print('✓ previsoes.json gerado')
+    print('OK previsoes.json gerado')
     return 0
 
 
